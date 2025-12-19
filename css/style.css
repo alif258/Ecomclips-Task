@@ -183,9 +183,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  * {
-    font-family: "Inter", sans-serif;
-  }
+  
   .heroSection {
     flex-direction: column;
     text-align: start;
@@ -227,9 +225,7 @@ body {
   }
 }
 @media (max-width: 480px) {
-  * {
-    font-family: "Inter", sans-serif;
-  }
+
   .scalableAmazon span {
     font-size: 48px;
     font-family: Recoleta !important;
@@ -240,6 +236,8 @@ body {
   }
   .heroText p {
     font-size: 10px;
+        font-family: "Inter", sans-serif;
+
     max-width: 350px;
   }
 
