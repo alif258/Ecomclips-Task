@@ -232,11 +232,11 @@ body {
   }
   .scalableAmazon span {
     font-size: 48px;
-    font-family: Recoleta;
+    font-family: Recoleta !important;
   }
   .scalableAmazon {
     font-size: 20px;
-    font-family: Recoleta;
+    font-family: Recoleta !important;
   }
   .heroText p {
     font-size: 10px;
