@@ -228,11 +228,11 @@ body {
 
   .scalableAmazon span {
     font-size: 48px;
-    font-family: Recoleta !important;
+    font-family: Recoleta;
   }
   .scalableAmazon {
     font-size: 20px;
-    font-family: Recoleta !important;
+    font-family: Recoleta;
   }
   .heroText p {
     font-size: 10px;
@@ -351,15 +351,14 @@ body {
     .item-list {
         flex-direction: row; 
         justify-content: space-around; 
-        gap: 5px; /* একদম ০ না রেখে সামান্য গ্যাপ রাখা ভালো */
+        gap: 5px; 
     }
 
-    /* p ট্যাগকে সুনির্দিষ্টভাবে টার্গেট করা হয়েছে */
     .item-list div p {
         font-size: 10px !important; 
         line-height: 1.2;
         font-weight: 400;
-        margin: 0; /* কোনো ডিফল্ট মার্জিন থাকলে তা সরানোর জন্য */
+        margin: 0; 
     }
 
     .revenue-icon img {
@@ -374,12 +373,11 @@ body {
 
 @media (max-width: 480px) {
     .item-list h1 {
-        font-size: 14px; 
+        font-size: 16px; 
     }
     
-    /* আরও ছোট স্ক্রিনে p ট্যাগের সাইজ */
     .item-list div p {
-        font-size: 6px !important;
+        font-size: 7px !important;
     }
 
     .revenue-icon img {
