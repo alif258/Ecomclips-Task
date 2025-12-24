@@ -1,0 +1,358 @@
+.amazon-ppc-card-ratings-description {
+  display: flex;
+  gap: 2px;
+}
+
+.amazon-ppc-card {
+  position: absolute;
+  top: -112%;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(
+    to right,
+    #05214b 0%,
+    #133c9f 40%,
+    #194cc4 70%,
+    #1c55c6 100%
+  );
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.amazon-ppc-card-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.amazon-ppc-card h1 {
+  color: white;
+  font-family: "Recoleta", serif;
+  font-size: 48px;
+  font-weight: 400;
+  padding: 40px 40px 0 0;
+  z-index: 20;
+  text-align: center;
+  margin: 0;
+}
+
+.amazon-ppc-card-header span {
+  color: #0fecee;
+}
+
+.amazon-ppc-card-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 90px;
+  color: white;
+}
+
+.amazon-ppc-card-stat div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+}
+
+.amazon-ppc-card-stat h2 {
+  font-size: 64px;
+  font-family: "Recoleta";
+  font-weight: normal;
+  margin: 0;
+}
+
+.percentage {
+  font-family: sans-serif;
+}
+
+.amazon-ppc-card-stat p {
+  font-size: 14px;
+  font-family: "inter";
+  margin: 0;
+  color: #adb6c1;
+}
+
+.amazon-ppc-card-stat-line {
+  height: 120px;
+  width: 2px;
+  background-color: #d9d9d9;
+  opacity: 0.49;
+}
+
+.amazon-ppc-card-ratings {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 90px;
+}
+
+.amazon-ppc-card-ratings-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+  gap: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 16px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(80px);
+}
+
+.amazon-ppc-card-ratings-img {
+  width: 100px;
+  height: 40px;
+}
+
+.amazon-ppc-card-ratings-img img {
+  width: 100px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.amazon-ppc-card-ratings-stars {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.amazon-ppc-card-star-img {
+  height: 16px;
+  width: 16px;
+}
+
+.amazon-ppc-card-star-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.amazon-ppc-card-ratings p {
+  font-size: 12px;
+  font-family: "inter";
+  color: #fff;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+  .amazon-ppc-card h1 {
+    font-size: 40px;
+    padding: 30px 30px 0 0;
+  }
+
+  .amazon-ppc-card-stat {
+    padding: 30px 60px;
+  }
+
+  .amazon-ppc-card-stat h2 {
+    font-size: 52px;
+  }
+
+  .amazon-ppc-card-stat p {
+    font-size: 12px;
+  }
+
+  .amazon-ppc-card-ratings {
+    padding: 0 60px;
+  }
+
+  .amazon-ppc-card-ratings-card {
+    width: 180px;
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .amazon-ppc-card {
+    height: auto;
+    min-height: 600px;
+    padding-bottom: 30px;
+  }
+
+  .amazon-ppc-card h1 {
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .amazon-ppc-card-stat {
+    padding: 30px 40px;
+    gap: 20px;
+  }
+
+  .amazon-ppc-card-stat div {
+    width: auto;
+    min-width: 120px;
+  }
+
+  .amazon-ppc-card-stat h2 {
+    font-size: 42px;
+  }
+
+  .amazon-ppc-card-stat p {
+    font-size: 11px;
+  }
+
+  .amazon-ppc-card-stat-line {
+    height: 100px;
+  }
+
+  .amazon-ppc-card-ratings {
+    padding: 0 40px;
+    gap: 15px;
+  }
+
+  .amazon-ppc-card-ratings-card {
+    width: 160px;
+    padding: 10px 6px;
+    gap: 8px;
+  }
+
+  .amazon-ppc-card-ratings-img {
+    width: 80px;
+    height: 35px;
+  }
+
+  .amazon-ppc-card-ratings-img img {
+    width: 80px;
+  }
+
+  .amazon-ppc-card-star-img {
+    height: 14px;
+    width: 14px;
+  }
+
+  .amazon-ppc-card-ratings p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .amazon-ppc-card {
+    top: -80%;
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+
+  .amazon-ppc-card-header {
+    padding-top: 20px;
+  }
+
+  .amazon-ppc-card h1 {
+    font-size: 28px;
+    padding: 15px;
+    line-height: 1.3;
+  }
+
+  .amazon-ppc-card-stat {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .amazon-ppc-card-stat div {
+    width: 40%;
+    min-width: 150px;
+  }
+
+  .amazon-ppc-card-stat h2 {
+    font-size: 36px;
+  }
+
+  .amazon-ppc-card-stat p {
+    font-size: 12px;
+  }
+
+  .amazon-ppc-card-stat-line {
+    display: none;
+  }
+
+  .amazon-ppc-card-ratings {
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .amazon-ppc-card-ratings-card {
+    width: 45%;
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .amazon-ppc-card {
+    top: -60%;
+    border-radius: 15px;
+  }
+
+  .amazon-ppc-card-header {
+    padding-top: 15px;
+  }
+
+  .amazon-ppc-card h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .amazon-ppc-card-stat {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .amazon-ppc-card-stat div {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .amazon-ppc-card-stat h2 {
+    font-size: 32px;
+  }
+
+  .amazon-ppc-card-stat p {
+    font-size: 11px;
+    padding: 0 10px;
+  }
+
+  .amazon-ppc-card-ratings {
+    padding: 0 15px;
+    gap: 12px;
+  }
+
+  .amazon-ppc-card-ratings-card {
+    width: 100%;
+    min-width: unset;
+    max-width: 200px;
+    padding: 12px 10px;
+  }
+
+  .amazon-ppc-card-ratings-img {
+    width: 70px;
+    height: 30px;
+  }
+
+  .amazon-ppc-card-ratings-img img {
+    width: 70px;
+  }
+
+  .amazon-ppc-card-star-img {
+    height: 12px;
+    width: 12px;
+  }
+
+  .amazon-ppc-card-ratings-stars {
+    gap: 4px;
+  }
+
+  .amazon-ppc-card-ratings p {
+    font-size: 10px;
+  }
+}

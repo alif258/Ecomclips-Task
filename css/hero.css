@@ -1,0 +1,256 @@
+.heroSectionBg {
+  background: url(../photos/heroBG.png) no-repeat center / cover;
+  width: 100%;
+}
+
+.heroSection {
+  padding: 80px 0 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.heroText {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.dominateBtn {
+  background: #2266f0;
+  color: #fefeff;
+  opacity: 0.9;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.scalableAmazon {
+  color: #fefeff;
+  opacity: 0.9;
+  font-size: clamp(28px, 5vw, 34px);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.scalableAmazon span {
+  font-size: clamp(40px, 10vw, 93px);
+  font-weight: normal;
+  display: block;
+  background: linear-gradient(
+    to bottom,
+    white 0%,
+    white 25%,
+    #94c3ff 50%,
+    #529dff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroText p {
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 550px;
+}
+
+.mobilePic {
+  display: none;
+}
+
+.coverImg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.heroBtn {
+  width: 196px;
+  background: #ffdc00;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  padding: 4px 4px 4px 15px;
+  border-radius: 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 67px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.heroBtn::before {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  background: black;
+  border-radius: 40px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.heroBtn:hover::before {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  right: 2px;
+}
+
+.btnText {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.heroBtn:hover .btnText {
+  color: white;
+}
+
+.btnArrow {
+  font-size: 18px;
+  color: white;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.btnArrow::before,
+.btnArrow::after {
+  content: "→";
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.btnArrow::after {
+  left: -40px;
+}
+
+.heroBtn:hover .btnArrow::before {
+  transform: translateX(40px);
+}
+
+.heroBtn:hover .btnArrow::after {
+  transform: translateX(40px);
+}
+
+/* --- Media Queries --- */
+
+@media (max-width: 1024px) {
+  .mainContainer {
+    width: 95%;
+  }
+  .scalableAmazon span {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    text-align: start;
+    padding: 60px 0;
+  }
+
+  .heroText p {
+    color: rgb(182, 181, 181);
+  }
+
+  .coverImg {
+    display: none;
+  }
+
+  .mobilePic {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .heroText {
+    align-items: flex-start;
+    padding: 0 30px;
+  }
+
+  .dominateBtn {
+    width: fit-content;
+    min-width: unset;
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-bottom: 8px;
+  }
+
+  .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .scalableAmazon span {
+    font-size: 48px;
+  }
+  
+  .scalableAmazon {
+    font-size: 20px;
+  }
+
+  .heroText p {
+    font-size: 10px;
+    font-family: "Inter", sans-serif;
+    max-width: 350px;
+  }
+
+  .dominateBtn {
+    font-size: 14px;
+  }
+
+  .heroBtn {
+    width: 155px;
+    padding: 3px 3px 3px 12px;
+    margin-top: 25px;
+  }
+
+  .btnText {
+    font-size: 13px;
+  }
+
+  .heroBtn::before {
+    width: 30px;
+    height: 30px;
+    right: 3px;
+  }
+
+  .btnArrow {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .heroBtn:hover::before {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    right: 3px;
+  }
+}

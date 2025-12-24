@@ -1,0 +1,91 @@
+.footbg {
+  background: url(../photos/Foot.png) no-repeat center / cover;
+  padding-top: 400px;
+}
+
+.ppc-question-header h1 {
+  font-size: 62px;
+  color: #fff;
+  opacity: 0.9;
+  margin: 0;
+  padding-bottom: 62px;
+  text-align: center;
+}
+
+.accordion {
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.accordion-header {
+  background-color: #121921;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  border-bottom: 4px solid #0f3940;
+}
+
+.accordion-header.active {
+  background: linear-gradient(
+    to bottom,
+    #123d94 0%,
+    #123d94 40%,
+    #0d3379 70%,
+    #0d3379 100%
+  );
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom: none;
+}
+
+.accordion-header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #00fffc;
+  font-weight: normal;
+  padding: 15px 20px;
+}
+
+.accordion-header img.up {
+  display: none;
+}
+
+.accordion-header.active img.down {
+  transform: rotate(180deg);
+}
+
+.accordion-header.active img.up {
+  display: block;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease, background-color 0.3s ease;
+  background: linear-gradient(
+    to bottom,
+    #0d3379 0%,
+    #0d3379 40%,
+    #031e40 70%,
+    #031e40 100%
+  );
+  color: white;
+}
+
+.accordion-content.active {
+  max-height: 200px;
+  padding: 0 20px 40px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.accordion-content p {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+  padding: 0 20px;
+}

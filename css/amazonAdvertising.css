@@ -1,0 +1,80 @@
+.amazon-ppc-question {
+  min-height: 600px;
+  margin-top: 146px;
+}
+
+.amazon-advertising-pricing {
+  position: relative;
+  max-width: 1499px;
+  margin: 146px auto 0;
+}
+
+.amazon-advertising-pricing-text {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 10;
+}
+
+.amazon-advertising-pricing-header h1 {
+  font-size: 75px;
+  color: #00fffc;
+  font-weight: normal;
+  margin: 0;
+  text-align: left;
+}
+
+.amazon-advertising-pricing-header p {
+  font-size: 37px;
+  color: #fff;
+  margin: 0 0 93px 0;
+  text-align: left;
+}
+
+.amazon-advertising-pricing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.amazon-advertising-pricing-content h2 {
+  color: #00fffc;
+  font-size: 43px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.amazon-advertising-pricing-content h1 {
+  color: white;
+  font-size: 76px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.amazon-advertising-pricing-content p {
+  color: white;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.amazon-advertising-pricing-content button {
+  color: #000;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ffdc00;
+  border-radius: 12px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.amazon-advertising-pricing img {
+  height: 655px;
+  width: 100%;
+  object-fit: cover;
+}
+
+

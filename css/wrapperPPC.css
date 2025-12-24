@@ -1,0 +1,303 @@
+/* Base Styles - Mobile First */
+.wrapperPPC {
+  margin-top: 60px;
+  position: relative;
+  padding: 0 16px;
+}
+
+.wrapperPPC .header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wrapperPPC .header h1 {
+  font-weight: 300;
+  color: #082c6b;
+  font-size: 28px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.wrapperPPC .header p {
+  font-weight: 200;
+  font-size: 16px;
+  color: #131921;
+  opacity: 0.8;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.forFade {
+  position: relative;
+  width: 100%;
+}
+
+.content-column::-webkit-scrollbar {
+  display: none;
+}
+
+.content-block {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  min-height: auto;
+}
+
+.content-block h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #082c6b;
+  margin-bottom: 10px;
+}
+
+.content-block p {
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+  margin-top: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+.image-column {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sticky-image-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.sticky-image-container img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  transition: opacity 0.4s ease-in-out;
+  display: block;
+  margin: 0 auto;
+}
+
+.fade-top,
+.fade-bottom {
+  display: none;
+}
+
+/* Tablet - 480px and up */
+@media screen and (min-width: 480px) {
+  .wrapperPPC {
+    margin-top: 80px;
+    padding: 0 24px;
+  }
+
+  .wrapperPPC .header h1 {
+    font-size: 36px;
+  }
+
+  .wrapperPPC .header p {
+    font-size: 18px;
+  }
+
+  .content-block {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .content-block h2 {
+    font-size: 26px;
+  }
+
+  .content-block p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+/* Tablet Landscape - 768px and up */
+@media screen and (min-width: 768px) {
+  .wrapperPPC {
+    margin-top: 100px;
+    padding: 0 32px;
+  }
+
+  .wrapperPPC .header {
+    margin-bottom: 50px;
+  }
+
+  .wrapperPPC .header h1 {
+    font-size: 42px;
+  }
+
+  .wrapperPPC .header p {
+    font-size: 20px;
+  }
+
+  .main-wrapper {
+    gap: 40px;
+  }
+
+  .content-block {
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+
+  .content-block h2 {
+    font-size: 28px;
+  }
+
+  .content-block p {
+    font-size: 17px;
+  }
+
+  .sticky-image-container img {
+    max-width: 600px;
+  }
+}
+
+/* Desktop - 1024px and up */
+@media screen and (min-width: 1024px) {
+  .wrapperPPC {
+    margin-top: 200px;
+    padding: 0 40px;
+  }
+
+  .wrapperPPC .header {
+    margin-bottom: 60px;
+  }
+
+  .wrapperPPC .header h1 {
+    font-size: 48px;
+  }
+
+  .wrapperPPC .header p {
+    font-size: 22px;
+  }
+
+  .main-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    height: 600px;
+    max-width: 1400px;
+  }
+
+  .forFade {
+    flex: 1;
+  }
+
+  .content-column {
+    max-height: 500px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding-right: 20px;
+  }
+
+  .content-block {
+    margin-top: 43px;
+    height: 100px;
+    margin-bottom: 75px;
+  }
+
+  .content-block h2 {
+    font-size: 30px;
+  }
+
+  .content-block p {
+    font-size: 18px;
+    max-width: 467px;
+  }
+
+  .image-column {
+    flex: 1;
+    max-height: 500px;
+    position: sticky;
+    top: 0;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+
+  .sticky-image-container {
+    max-width: 650px;
+  }
+
+  .sticky-image-container img {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .fade-top,
+  .fade-bottom {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .fade-top {
+    top: 0;
+    background: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .fade-bottom {
+    bottom: 0;
+    background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+/* Large Desktop - 1280px and up */
+@media screen and (min-width: 1280px) {
+  .wrapperPPC {
+    margin-top: 300px;
+  }
+
+  .wrapperPPC .header h1 {
+    font-size: 50px;
+  }
+
+  .wrapperPPC .header p {
+    font-size: 24px;
+  }
+
+  .sticky-image-container {
+    max-width: 700px;
+  }
+
+  .sticky-image-container img {
+    max-width: 700px;
+  }
+
+  .fade-top,
+  .fade-bottom {
+    height: 200px;
+  }
+}
+
+/* Extra Large Desktop - 1600px and up */
+@media screen and (min-width: 1600px) {
+  .wrapperPPC {
+    margin-top: 474px;
+  }
+
+  .fade-top,
+  .fade-bottom {
+    height: 300px;
+  }
+}
